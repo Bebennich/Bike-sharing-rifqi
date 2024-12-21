@@ -5,7 +5,7 @@ ID Dicoding: Muhammad Rifqi Rahmanda
 # Bike Sahirng Analisis
 
 ## Live Dashboard
-[Bike Sharing Dashboard]([https://bikesharing-3tlvn2citvhvljt587rjvb.streamlit.app/](https://bike-sharing-rifqi-sng89l6vn4vj4rrh9pzbw2.streamlit.app/))
+[Bike Sharing Dashboard](https://bike-sharing-rifqi-sng89l6vn4vj4rrh9pzbw2.streamlit.app/))
 
 ## Project Overview
 This project, submitted for the "Learn Data Analysis with Python" course from Dicoding, focuses on analyzing bike sahring data.

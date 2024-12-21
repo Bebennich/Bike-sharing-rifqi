@@ -45,7 +45,7 @@ with st.sidebar:
     
 st.header('Bike Sharing')
 st.subheader('Jumlah penyewaan sepeda Mingguan')
-total_rent = df_rent_by_days.count.sum()
+total_rent = df_rent_by_days['count']['sum'].sum()
 st.metric("Jumah penyewaan ", value=total_rent)
         
 st.subheader("hari dengan rata-rata penyewaan sepeda terbanyak")

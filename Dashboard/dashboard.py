@@ -22,7 +22,7 @@ dataset_bike.sort_values(by="dateday", inplace=True)
 dataset_bike.reset_index(inplace=True)
 
 for column in datetime_columns:
-    dataset_bike[column] = pd.to_datetime(dataset_bike['date'])
+    dataset_bike[column] = pd.to_datetime(dataset_bike['dateday'])
 
 min_date = dataset_bike['dateday'].min()
 max_date = dataset_bike['dateday'].max()

@@ -48,7 +48,7 @@ st.subheader('Jumlah penyewaan sepeda Mingguan')
 total_rent = df_rent_by_days['count']['sum'].sum()
 st.metric("Jumah penyewaan ", value=total_rent)
         
-st.subheader("ari dengan rata-rata penyewaan sepeda terbanyak")
+st.subheader("Hari dengan rata-rata penyewaan sepeda terbanyak")
 colors = ['#A5DD9B', '#C5EBAA', '#F6F193', '#F2C18D']
 plt.figure(figsize=(10, 5))
 
@@ -58,9 +58,13 @@ sns.barplot(
     data=df_analysis_rent_days.sort_values(by="count", ascending=False).head(3),
     palette=colors
 )
+plt.ylabel(None)
+plt.xlabel(None)
+plt.tick_params(axis='x', labelsize=12)
+plt.gca().yaxis.set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}".format(int(x))))
+st.pyplot(plt)
 
 st.subheader("Jumlah pelanggan berdasarkan kondisi cuaca")
-df_rent_by_weather
 colors = ['#FFBE98', '#FEECE2', '#F7DED0', '#E2BFB3']
 plt.figure(figsize=(10, 5))
 sns.barplot(

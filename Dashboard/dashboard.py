@@ -63,6 +63,7 @@ plt.xlabel(None)
 plt.tick_params(axis='x', labelsize=12)
 plt.grid(axis='y', linestyle='--', alpha=0.7)  
 plt.show()
+st.pyplot(plt)
 
 
 st.subheader("Jumlah pelanggan berdasarkan kondisi cuaca")
